@@ -4,6 +4,7 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	margin: 0;
 }
+
 #background {
 	background: url(../images/bg-pattern.jpg) repeat-x center top;
 	min-height: 1318px;
