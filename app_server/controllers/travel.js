@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+var fs = require('fs');
+var trips = JSON.parse(fs.readFileSync('./data/trips.json',
+'utf8'));
 
 /* GET home page. */
-const travel = (req, res) => {
-    res.render('travel', {title: 'Travlr Getaways'});
+var travel = (req, res) => {
+    res.render('travel', {title: 'Travlr Getaways', trips});
 };
 
 module.exports = {
