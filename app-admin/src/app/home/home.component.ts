@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authenticationService: AuthenticationService
+  ) { }
 
   ngOnInit() {
   }
-
+  public isLoggedIn(): boolean {                                    1
+    return this.authenticationService.isLoggedIn();
+  }
+  
+  public getUsername(): string {                                    2
+    const { name } = this.authenticationService.getCurrentUser();
+    return name ? name : 'Guest';                                   3
+  }
 }

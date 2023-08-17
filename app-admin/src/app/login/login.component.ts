@@ -30,7 +30,7 @@ public onLoginSubmit(): void {
 }
 private doLogin(): void {
  this.authenticationService.login(this.credentials)
- .then(() => this.router.navigateByUrl('#'))
+ .then(() => this.router.navigateByUrl('/'))
  .catch((message) => this.formError = message);
 }
 }

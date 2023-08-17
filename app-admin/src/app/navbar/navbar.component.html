@@ -14,6 +14,13 @@
  *ngIf="!isLoggedIn()">
   <span class="has-icon-left">Log In</span>
   </a>
+  <a class="navbar-item" routerLink="list-trips">
+  <span>Trips</span>
+  </a>
+  <a class="navbar-item" routerLink="add-trip"
+  *ngIf="isLoggedIn()">
+    <span>Add Trip</span>
+    </a>
   <a class="navbar-item" (click)="onLogout()"
  *ngIf="isLoggedIn()">
   <span class="has-icon-left ">Log Out</span>
