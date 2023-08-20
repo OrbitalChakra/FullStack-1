@@ -1,0 +1,6 @@
+# FullStack-1
+This project uses the MEAN stack to develop a website for the CS465 course at SNHU. The course is designed to have students develop a skillset for the full-stack developer role. 
+
+The use of the MEAN stack is important because it allows for a feature-rich developer environment. MongoDB is a NoSQL database and has additional functionality like ETL and large data formats, unlike SQL. Data in MongoDB is persisted as JSON, a data format that is easy to parse and update with a NoSQL database. Additionally, API routing in the express is a simple setup once learned with components in angular being quick to develop with command line tools that allow the developer to possess templates for commonly used things like services and components. 
+The development process started with a focus on the backend, working on the API routes and temporary HTML templates that exposed us to endpoints and rendering. To test much of the viability of the app it was important to understand error handling for different server responses. The responses I saw most often were 401 and 400 errors, especially when testing the POST method using authentication. 
+This applicaiton made me understand how the development process is not a scary thing. I now feel comfortable working with the MEAN stack and making applications that are foundations for web applicaitons. 
